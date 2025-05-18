@@ -1,0 +1,495 @@
+body {
+      margin: 0;
+      background-color: #070e14;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+.menu {
+  display: flex;
+  background-color: #333;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f1f1f;
+    padding: 10px 20px;
+}
+  
+.logo {
+    font-weight: bold;
+    font-size: 25px;
+    color: #f1bb63;
+    padding: 10px 0px 10px 50px;
+}
+  
+.tieude {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(222, 222, 191);
+    padding-top: 10px;
+  }
+.search-bar{
+    position: relative;
+    
+}
+.search-bar input {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    width: 300px;
+    font-style: italic;
+}
+.search-bar i {
+    color: black;
+    position: absolute;
+    right: 10px;
+    transform: translateY(35%);
+}  
+.user-actions{
+    padding-right: 100px;
+}
+.user-actions a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 14px;
+}
+  
+.user-actions a:hover {
+    text-decoration: underline;
+}
+
+.menu a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  position: relative;
+}
+
+.menu .dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #222;
+  min-width: 200px;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  flex-wrap: wrap;
+}
+
+.dropdown-content a {
+  display: inline-block;
+  width: 45%;
+  color: #fff;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+  
+.menu a:hover {
+    color: #ffd700;}
+.dropdown-content a:hover {
+  background-color: #FFD700;
+  color: black;
+} 
+ .menu-toggle {
+      position: absolute;
+      left: 10px;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 22px;
+      display: none; 
+      z-index: 1000;
+    }
+.search-toggle {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: white;
+  z-index: 1000;
+}
+.thanh-bar-o-ngoai{
+  position: relative;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 250px;
+  height: 100%;
+  background-color: #111;
+  color: white;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+.sidebar.open {
+  left: 0;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 999;
+}
+.sidebar.open + .overlay,
+.overlay.active {
+  display: block;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.submenu {
+  display: none;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.plus {
+  float: right;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;     
+  width: 80%;
+  max-width: 1200px; 
+  margin: 0 auto;    
+  gap: 20px;
+}
+.movie{
+  margin: 0 auto;            
+  position: relative;
+  top: 50px;   
+  display: flex;
+  justify-content: center;      
+  align-items: center;         
+  background-color: #575555;
+  border-radius: 8px;
+  height: 50%;
+  width: 50%; 
+  display: flex;
+flex-direction: column;
+   
+}
+
+.boxall{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+
+}
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.mieu_ta{
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #fff;
+    background-color: #3a3a3a;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.poster-wrapper {
+  position: relative;
+  width: fit-content;
+  display: inline-block;
+}
+
+.poster-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.watch-button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 12px;
+  background-color: crimson;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.poster-wrapper:hover .watch-button {
+  background-color: #ba0606;
+  transform: scale(1.05);
+}
+.headerlink {
+    
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.headerlink a {
+    color: orange;
+    text-decoration: none;
+  }
+.headerlink a:hover {
+    text-decoration: underline;
+}
+.headerlink-current {
+    color: #ccc;
+}
+.headerlink i {
+    margin-right: 5px;
+    color: orange;
+}
+.sidebar-menu li{
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+.plus{
+margin-right: 55%;
+}
+.sidebar-menu ul li {
+  border-bottom: 1px solid #333;
+      cursor: pointer;
+      padding: 5px 12px 10px 12px;
+}
+.sidebar-menu ul li:hover{
+  background-color: #222;
+}
+.sidebar-menu li{
+  border-bottom: 1px solid #333;
+  padding: 0 0 1em 0;
+  box-sizing: border-box;
+  margin-left: -1em;
+  
+}
+.sidebar-menu .submenu li{
+  border: none;
+}
+.sidebar-menu ul {
+  background-color: #222;
+}
+.sidebar-menu{
+  margin-top: 0;
+  font-size: larger;
+}
+.sidebar-menu li:hover{
+  background-color: #222;
+}
+h3{
+  color: rgb(245, 176, 29);
+}
+@media (max-width: 992px) {
+  body{
+    margin: 0;
+    padding: 0;
+  }
+    .container {
+        width: 100%;
+    }
+    .movie {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+    .mieu_ta {
+        font-size: 15px;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 599px){
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .user-actions{
+    display: none;
+  }
+  .tieude{
+    display: none;
+  }
+ 
+  .logo{
+    font-size: 15px;
+    text-align: center;
+    margin: 3px auto;
+    width: 100%;
+    display: block;
+    padding-left: 0;
+  }
+  .search-bar{
+    display: none;
+  }
+  .menu{
+    display: none;
+  }
+  .search-toggle {
+    display: block;
+    position: absolute;
+    top: 1em;
+    right: 3%;
+  }
+  .search-bar.show {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #111;
+  }
+  .search-bar input {
+    flex: 1;
+    margin-left: 10px;
+    padding: 5px;
+    color: white;
+    background-color: #222;
+    border: 1px solid #555;
+  }
+.timkiem{
+  display: none;
+}
+
+.menu-toggle {
+  display: block;
+  position: absolute;
+  top: 1em;
+  left: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  z-index: 1000;
+
+}
+.sidebar {
+    display: block;
+  }
+  .sidebar-menu a {
+    text-decoration: none;     /* Xoá gạch chân mặc định */
+    color: white;              /* Màu chữ trắng */
+  }
+  .sidebar-menu a:hover {
+    text-decoration: underline; /* Hiện gạch chân khi hover */
+  }
+  .sidebar-menu li{
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+.plus{
+margin-right: 55%;
+}
+.sidebar-menu ul li {
+  border-bottom: 1px solid #333;
+      cursor: pointer;
+      padding: 5px 12px 10px 12px;
+}
+.sidebar-menu ul li:hover{
+  background-color: #222;
+}
+.sidebar-menu li{
+  border-bottom: 1px solid #333;
+  padding: 0 0 1em 0;
+  box-sizing: border-box;
+  margin-left: -1em;
+  
+}
+.sidebar-menu .submenu li{
+  border: none;
+}
+.sidebar-menu ul {
+  background-color: #222;
+}
+.sidebar-menu{
+  margin-top: 0;
+  font-size: larger;
+}
+.sidebar-menu li:hover{
+  background-color: #222;
+}
+.movie{
+  background-color: #070e14;
+  width: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.boxall{
+  padding-top: 10px;
+  background-color:#3f3d3d;
+  border-radius: 10px;
+  padding: 13px;
+  margin: 13px;
+}
+.mieu_ta{
+  background-color:#3f3d3d;
+  font-size: 14px;
+  border-top: 2px solid gray;
+  border-radius: 0px;
+  padding: 5px 0px;
+}
+.poster-wrapper{
+  width: 200px;
+}
+.box{
+  font-size: 15px;
+}
+h3{
+  color: rgb(245, 176, 29);
+}
+
+.container{
+  width: 100%;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  align-items: center;
+
+}
+}

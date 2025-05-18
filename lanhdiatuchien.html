@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gioithieuphim.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="thanh-bar-o-ngoai">
+  <button class="menu-toggle" onclick="toggleSidebar()"><i class="fas fa-bars"></i></button>
+  <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+  <div class="sidebar" id="sidebar">
+    <button class="close-btn" onclick="closeSidebar()"><i class="fa-solid fa-xmark"></i></button>
+<ul class="sidebar-menu">
+    <li>Trang chủ</li>
+
+    <li onclick="toggleSubmenu('genre')">
+      Thể loại<span class="plus" id="plus-genre">+</span>
+    </li>
+    <ul class="submenu" id="submenu-genre">
+      <li>Hành động</li>
+      <li>Tình cảm</li>
+      <li>Hoạt hình</li>
+    </ul>
+
+    <li onclick="toggleSubmenu('country')">
+      Quốc gia <span class="plus" id="plus-country">+</span>
+    </li>
+    <ul class="submenu" id="submenu-country">
+      <li>Việt Nam</li>
+      <li>Hàn Quốc</li>
+      <li>Mỹ</li>
+    </ul>
+
+    <li>Phim Bộ</li>
+    <li>Phim Lẻ</li>
+    <li>Phim Chiếu Rạp</li>
+    <li><a href="#"><i class="fas fa-right-to-bracket"></i> Đăng nhập</a></li>
+    <li><a href="#"><i class="fas fa-user-plus"></i> Đăng ký</a></li>
+  </ul>
+</div>
+<div class="topbar">
+        <div class="logo">NHÓM 5 FILM<br><span class="tieude">Phim Online</span></div>
+         <button class="search-toggle" onclick="toggleSearchBar()">
+               <i class="fas fa-search"></i>
+          </button>
+        <div class="search-bar" id="searchBar">
+            <label class="timkiem" for="search"><i class="fas fa-search"></i></label>
+          <input id="search" type="text" placeholder="Nhập tên phim bạn muốn tìm kiếm...">
+        </div>
+        <div class="user-actions">
+          <a href="#"><i class="fas fa-right-to-bracket"></i> Đăng nhập</a>
+          <a href="#"><i class="fas fa-user-plus"></i> Đăng ký</a>
+        </div>
+</div>
+</div>
+<div class="menu">
+  <a href="#">TRANG CHỦ</a>
+
+  <div class="dropdown">
+    <a href="#">THỂ LOẠI▼</a>
+    <div class="dropdown-content">
+      <a href="#">Hành Động</a>
+      <a href="#">Tình cảm</a>
+      <a href="#">Hoạt hình</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="#">QUỐC GIA▼</a>
+    <div class="dropdown-content">
+      <a href="#">Việt Nam</a>
+      <a href="#">Hàn Quốc</a>
+      <a href="#">Mỹ</a>
+    </div>
+  </div>
+
+  <a href="#">PHIM BỘ</a>
+  <a href="#">PHIM LẺ</a>
+  <a href="#">PHIM CHIẾU RẠP</a>
+</div>
+<script src="gioithieuphim.js"></script>
+<div class="headerlink">
+  <span class="headerlink-item"><i class="fa fa-home"></i> <a href="#">Trang chủ</a></span> /
+  <span class="headerlink-item"><a href="#">Giới thiệu</a></span> /
+  <span class="headerlink-current">Lãnh địa tử chiến</span>
+</div>
+     <div class="container">
+  <div class="movie">
+    <div class="boxall">
+      <div class="poster-wrapper">
+            <img src="https://i.pinimg.com/736x/3c/d2/4b/3cd24b32647363c7725556962a4b2567.jpg" alt="twinkling_watermelon">
+            <a href="xemlanhdiatuchien.html" class="watch-button">Xem phim</a>
+            </div>
+            <div class="box">
+             <h3>Lãnh địa tử chiến</h3>
+                <p>Thể loại: Hành động, Giật gân, Bạo lực</p>
+                <p>Quốc gia: Mỹ</p>
+                <p>Năm phát hành: 2025</p>
+                <p>Thời gian: 10 tập</p>
+            <div class="mieu_ta">
+                <br>
+                <div>MobLand 2025; Hai gia tộc tội phạm khét tiếng ở London, nhà Harrigan và nhà Stevenson, lao vào cuộc chiến sống còn để giành quyền kiểm soát thế giới ngầm. Trong khi bạo lực leo thang, Harry Da Souza là một fixer đầy mưu mô bị cuốn vào cuộc chiến quyền lực tàn khốc này. Khi các thế lực đối đầu, lòng trung thành bị thử thách và mạng sống trở thành thứ để đặt cược. Trong thế giới mà ranh giới thiện - ác bị xóa nhòa, chỉ có một quy tắc duy nhất: Gia đình là trên hết. Phim Lãnh Địa Tử Chiến do đạo diễn Ronan Bennett giàn dựng, với sự tham gia của các diễn viên: Tom Hardy, Pierce Brosnan, Paddy Considine, Joanne Froggatt, Lara Pulver, Anson Boon, Mandeep Dhillon,..<br>
+                <div>Diễn viên:Tom Hardy,  Pierce Brosnan,  Paddy Considine,  Joanne Froggatt,  Lara Pulver,  Anson Boon,  Mandeep Dhillon</div>
+                <div>Đạo diễn:Ronan Bennett</div>
+                <div>Quốc gia:USA</div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+    
+
+</body>
+</html>

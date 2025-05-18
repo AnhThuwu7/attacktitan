@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="xemphim.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+       <div class="thanh-bar-o-ngoai">
+  <button class="menu-toggle" onclick="toggleSidebar()"><i class="fas fa-bars"></i></button>
+  <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+  <div class="sidebar" id="sidebar">
+    <button class="close-btn" onclick="closeSidebar()"><i class="fa-solid fa-xmark"></i></button>
+<ul class="sidebar-menu">
+    <li>Trang chủ</li>
+
+    <li onclick="toggleSubmenu('genre')">
+      Thể loại<span class="plus" id="plus-genre">+</span>
+    </li>
+    <ul class="submenu" id="submenu-genre">
+      <li>Hành động</li>
+      <li>Tình cảm</li>
+      <li>Hoạt hình</li>
+    </ul>
+
+    <li onclick="toggleSubmenu('country')">
+      Quốc gia <span class="plus" id="plus-country">+</span>
+    </li>
+    <ul class="submenu" id="submenu-country">
+      <li>Việt Nam</li>
+      <li>Hàn Quốc</li>
+      <li>Mỹ</li>
+    </ul>
+
+    <li>Phim Bộ</li>
+    <li>Phim Lẻ</li>
+    <li>Phim Chiếu Rạp</li>
+    <li><a href="#"><i class="fas fa-right-to-bracket"></i> Đăng nhập</a></li>
+    <li><a href="#"><i class="fas fa-user-plus"></i> Đăng ký</a></li>
+  </ul>
+</div>
+<div class="topbar">
+        <div class="logo">NHÓM 5 FILM<br><span class="tieude">Phim Online</span></div>
+         <button class="search-toggle" onclick="toggleSearchBar()">
+               <i class="fas fa-search"></i>
+          </button>
+        <div class="search-bar" id="searchBar">
+            <label class="timkiem" for="search"><i class="fas fa-search"></i></label>
+          <input id="search" type="text" placeholder="Nhập tên phim bạn muốn tìm kiếm...">
+        </div>
+        <div class="user-actions">
+          <a href="#"><i class="fas fa-right-to-bracket"></i> Đăng nhập</a>
+          <a href="#"><i class="fas fa-user-plus"></i> Đăng ký</a>
+        </div>
+</div>
+</div>
+<div class="menu">
+  <a href="#">TRANG CHỦ</a>
+
+  <div class="dropdown">
+    <a href="#">THỂ LOẠI▼</a>
+    <div class="dropdown-content">
+      <a href="#">Hành Động</a>
+      <a href="#">Tình cảm</a>
+      <a href="#">Hoạt hình</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="#">QUỐC GIA▼</a>
+    <div class="dropdown-content">
+      <a href="#">Việt Nam</a>
+      <a href="#">Hàn Quốc</a>
+      <a href="#">Mỹ</a>
+    </div>
+  </div>
+
+  <a href="#">PHIM BỘ</a>
+  <a href="#">PHIM LẺ</a>
+  <a href="#">PHIM CHIẾU RẠP</a>
+</div>
+<script src="gioithieuphim.js"></script>
+<br>
+<div class="headerlink">
+  <span class="headerlink-item"><i class="fa fa-home"></i> <a href="#">Trang chủ</a></span> /
+  <span class="headerlink-item"><a href="#">Phim lẻ</a></span> /
+  <span class="headerlink-current">Siêu Lừa Gặp Siêu Lầy</span>
+</div>
+<div class="container">
+<iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/ecNMIlP7wIs" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+</iframe>
+</div>
+
+<div class="episode-epi">
+  <div class="tags">🎞️ Xem Vietsub:</div>
+  <br>
+  <div class="title" id="episodeTitle">Siêu Lừa Gặp Siêu Lầy</div>
+  <div class="subtitle" id="episodeSubtitle">Siêu Lừa Gặp Siêu Lầy</div>
+  <div class="description" id="episodeDescription">
+   Thuộc phong cách hài hước với các “cú lừa” thông minh và lầy lội đến từ bộ đôi Tú (Anh Tú) và Khoa (Mạc Văn Khoa), Siêu Lừa Gặp Siêu Lầy của đạo diễn Võ Thanh Hòa theo chân của Khoa, tên lừa đảo tầm cỡ “quốc nội” đến đảo ngọc Phú Quốc với mong muốn đổi đời. Tại đây, Khoa gặp Tú, tay lừa đảo “hàng real” và cùng Tú thực hiện các phi vụ từ nhỏ đến lớn. Cứ ngỡ sự ranh mãnh của Tú và sự may mắn trời cho của Khoa sẽ giúp họ trở thành bộ đôi bất khả chiến bại, nào ngờ lại đối mặt với nhiều tình huống dở khóc – dở cười.
+  </div>
+</div>
+<div class="section-title">PHIM NỔI BẬT</div>
+      <div class="movies-container">
+    <button class="carousel-button prev" onclick="moveCarousel(-1)"><i class="fas fa-chevron-left"></i></button>
+    <div class="movies-row" id="movies-row">
+      <div class="movie">
+        <div class="label">Tập 7 Vietsub</div>
+        <a href="lanhdiatuchien.html">
+        <img src="https://image.tmdb.org/t/p/original//abeH7n5pcuQcwYcTxG6DTZvXLP1.jpg" alt="Phim 1">
+        </a>
+        <div class="title-sub">
+          <div class="movie-title">Lãnh Địa Tử Chiến</div>
+          <div class="movie-sub">MobLand</div>
+        </div>
+      </div>
+      <div class="movie">
+        <div class="label">Full Vietsub</div>
+        <a href="minions.html">
+        <img src="https://static.nutscdn.com/vimg/300-0/3f15ef6775e832e304bc57ea9c741836.jpg" alt="Phim 2">
+        </a>
+        <div class="title-sub">
+          <div class="movie-title">Minions: Sự Trỗi Dậy Của Gru</div>
+          <div class="movie-sub">Minions: The Rise of Gru</div>
+        </div>
+      </div>
+      <div class="movie">
+        <div class="label">Tập 16 Vietsub</div>
+        <a href="whenlifegive.html">
+        <img src="https://kenh14cdn.com/203336854389633024/2025/3/24/48207153612126081802362482543174346994177221n-1741410152031-17414101521701977011714-1742746177132-17427461782081129379435-1742785571308-1742785571443591445732.jpg" alt="Phim 3">
+        </a>
+        <div class="title-sub">
+          <div class="movie-title">Khi Cuộc Đời Cho Bạn Quả Quýt</div>
+          <div class="movie-sub">When Life Gives You Tangerines</div>
+        </div>
+      </div>
+      <div class="movie">
+        <div class="label">Full Vietsub + thuyết minh</div>
+        <a href="snowwhite.html">
+        <img src="https://static.nutscdn.com/vimg/300-0/962de7ccfd7ece733d1128aa1db1343c.jpg" alt="Phim 4">
+        </a>
+        <div class="title-sub">
+          <div class="movie-title">Nàng Bạch Tuyết</div>
+          <div class="movie-sub">Snow White</div>
+        </div>
+      </div>
+      <div class="movie">
+        <div class="label">Full Vietsub</div>
+        <a href="attacktitan.html">
+        <img src="https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/image/c5f0a1eff4c394a251036189ccddaacd/p/o/poster_dai_chien_nguoi_khong_lo_7.jpg" alt="Phim 5">
+        </a>
+        <div class="title-sub">
+          <div class="movie-title">Đại Chiến Người Khổng Lồ: Lần Tấn Công Cuối Cùng</div>
+          <div class="movie-sub">Attack on Titan: THE LAST ATTACK</div>
+        </div>
+      </div>
+      <div class="movie">
+        <div class="label">Full Vietsub + thuyết minh</div>
+        <a href="cuulongtrai.html">
+        <img src="https://static.nutscdn.com/vimg/300-0/7db30b2f064b7023a7785a5ed73124e8.jpg" alt="Phim 6">
+        </a>
+        <div class="title-sub">
+          <div class="movie-title">Cửu Long Thành Trại: Vây Thành</div>
+          <div class="movie-sub">Twilight of the Warriors: Walled In</div>
+        </div>
+      </div>
+      <div class="movie">
+      <div class="label">Full Vietsub</div>
+      <a href="avatar2.html">
+      <img src="https://khenphim.com/wp-content/uploads/2022/12/Avatar2-poster_KP.webp" alt="Phim 7">
+      </a>
+      <div class="title-sub">
+        <div class="movie-title">Avatar 2: Dòng Chảy Của Nước</div>
+      <div class="movie-sub">Avatar: The Way of Water</div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-button next" onclick="moveCarousel(1)"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <script src="xemphim.js"></script>
+
+</body>
+</html>
